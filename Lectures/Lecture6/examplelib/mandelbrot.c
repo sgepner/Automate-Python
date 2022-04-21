@@ -5,6 +5,9 @@
 Code from: https://ipython-books.github.io/54-wrapping-a-c-library-in-python-with-ctypes/
 */
 
+/*
+  A version of the escape time algorithm
+*/
 void mandelbrot(int size, int iterations, int *col)
 {
     // Variable declarations.
