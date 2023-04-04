@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     int period = 1000;
     string sett_file = "";
 
-    // Values read from filw
+    // Values read from file
     double dt = 0.1; // time step
     double xmax  = 1.0; // max
     double xmin  = -1.0;// min
