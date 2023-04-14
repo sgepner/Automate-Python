@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/courses/SG/Automate-Python/Laboratories/Lab4/black_box/main.cpp
+iostream
+-
+fstream
+-
+chrono
+-
+thread
+-
+filesystem
+-
+algorithm
+-
+random
+-
+
