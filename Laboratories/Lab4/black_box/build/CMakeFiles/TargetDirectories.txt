@@ -1,3 +1,0 @@
-/mnt/d/courses/SG/Automate-Python/Laboratories/Lab4/black_box/build/CMakeFiles/rebuild_cache.dir
-/mnt/d/courses/SG/Automate-Python/Laboratories/Lab4/black_box/build/CMakeFiles/edit_cache.dir
-/mnt/d/courses/SG/Automate-Python/Laboratories/Lab4/black_box/build/CMakeFiles/black-box.dir
