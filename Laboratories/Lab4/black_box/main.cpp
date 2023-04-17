@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
     // sum up the settings
     cout << "===== Starting process =====" << '\n';
     cout << "X:\t" << xval << '\n';
-    cout << "Y:\t" << xval << '\n';
+    cout << "Y:\t" << yval << '\n';
 
     // File to store to
     ofstream myfile; // open output stream
