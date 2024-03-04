@@ -1,2 +1,5 @@
 def fun():
-  print("Hello!!")
+    print("Hello!!")
+
+def add(a, b):
+    return a+b
