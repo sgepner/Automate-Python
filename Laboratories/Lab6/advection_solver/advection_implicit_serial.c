@@ -3,6 +3,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+
+
 double nrm(double* u, double *unew, int size)
 {
   double v = fabs(u[0] - unew[0]);
@@ -16,7 +18,6 @@ double nrm(double* u, double *unew, int size)
 // First order, backward FD
 void explicit_euler_bd_1(double *u, double *un, int nx, double c, double dt, double dx)
 {
-  printf("%p %p\n", u, un);
   double c1 = c * dt / dx;
   double *tmp;
   
@@ -24,10 +25,6 @@ void explicit_euler_bd_1(double *u, double *un, int nx, double c, double dt, dou
   un[0] = u[0] - c1 * ( u[0] - u[nx-1]);
   for(int i=1; i< nx; ++i)
     un[i] = u[i] - c1 * ( u[i] - u[i-1]);
-    
-  tmp = u;
-  u = un;
-  un = tmp;
 }
 
 // Second order, backward FD
@@ -42,9 +39,6 @@ void explicit_euler_bd_2(double *u, double *un, int nx, double c, double dt, dou
   for(int i=2; i< nx; ++i)
     un[i] = u[i] - c1 * ( 3.0/2.0*u[i] - 2*u[i-1] +1.0/2.0*u[i-2]);
 
-  tmp = u;
-  u = un;
-  un = tmp;
 }
 
 // Second order, central FD
@@ -76,9 +70,6 @@ void implicit_euler_cn_2(double *u, double *b, double *un, int size, double c,
       un = tmp;
       return;
     }
-    tmp = u;
-    u = un;
-    un = tmp;
   }
   printf("Failed to conerge in %d with err %lf \n", N, err);
 }
