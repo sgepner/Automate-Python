@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
     myfile.flush();
 
     double zval = (xval-45.68)*(xval+85.45) + (yval-58.84)*(yval-25.55);
-    myfile << xval << ",\t " << yval << " " << zval << '\n';
+    myfile << xval << ",\t " << yval << ",\t " << zval << '\n';
     myfile.flush();
     cout << "Z:\t" << zval << '\n';
 
